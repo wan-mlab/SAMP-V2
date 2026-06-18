@@ -1,0 +1,11 @@
+name: sampv2
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy
+  - pandas
+  - scikit-learn
+  - jupyter
+  - openpyxl
+  - pip

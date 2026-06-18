@@ -1,0 +1,73 @@
+# SAMPv2
+
+SAMPv2 is a stacked machine-learning framework for antimicrobial peptide
+prediction. The model uses sequence-derived feature matrices and combines
+first-layer classifiers with a second-layer classifier for final prediction.
+
+## Repository Structure
+
+```text
+SAMP_V2/
+  README.md
+  LICENSE
+  environment.yml
+  sampv2/
+    __init__.py
+    metrics.py
+    stacking.py
+  scripts/
+    train.py
+  examples/
+    README.md
+  results/
+    .gitkeep
+```
+
+## Installation
+
+```bash
+conda env create -f environment.yml
+conda activate sampv2
+pip install -e .
+```
+
+## Input Format
+
+Training and test files should be CSV files with sample IDs in the first column.
+Each row is one peptide sequence/sample, each feature is one column, and the
+binary class label must be stored in a column named `labels`.
+
+Example:
+
+```text
+sample_id,feature_1,feature_2,feature_3,labels
+sample_001,0.13,0.44,0.09,1
+sample_002,0.05,0.21,0.31,0
+```
+
+## Usage
+
+```bash
+python scripts/train.py \
+  --train examples/example_train.csv \
+  --test examples/example_test.csv \
+  --output results/test_predictions.csv \
+  --metrics-output results/metrics.csv \
+
+```
+
+
+## Tutorial
+
+The original development notebook is currently stored as `sampv2.ipynb`.
+For release, convert it into a tutorial notebook under `examples/` that imports
+the package functions and uses relative example data paths.
+
+## Citation
+
+Citation information will be added after publication.
+
+## License
+
+License pending. Please confirm the intended open-source license before public
+release.
