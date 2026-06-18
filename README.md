@@ -75,6 +75,9 @@ the package functions and uses relative example data paths.
 
 Citation information will be added after publication.
 
+## Contact
+If you have any questions, comments, or would like to report a bug, please contact msun@unmc.edu
+
 ## License
 
 License pending. Please confirm the intended open-source license before public
