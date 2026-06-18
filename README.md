@@ -2,7 +2,7 @@
 
 SAMPv2 is a stacked machine-learning framework for antimicrobial peptide
 prediction. The model uses sequence-derived feature matrices and combines
-first-layer classifiers with a second-layer classifier for final prediction.
+first-layer classifiers with a meta learner for final prediction.
 
 ## Repository Structure
 
