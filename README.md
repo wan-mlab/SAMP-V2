@@ -41,7 +41,7 @@ Each row is one peptide sequence/sample, each feature is one column, and the
 binary class label must be stored in a column named `labels`.
 ### Feature extraction
 ```bash
-use extractFeatures funtion in extractFeatures.R file to prepare feature matrix:
+#### use extractFeatures funtion in extractFeatures.R file to prepare feature matrix:
 extractFeatures(ampFile ='training_data_AMP.fasta',
               nonampFile = 'training_data_nonAMP.fasta',
               out = './training_data_features.csv',
