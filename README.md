@@ -1,6 +1,6 @@
-# SAMPv2
+# SAMP V2
 
-SAMPv2 is a stacked machine-learning framework for antimicrobial peptide
+SAMPv2 is a stacking ensemble learning framework for antimicrobial peptide
 prediction. The model uses sequence-derived feature matrices and combines
 first-layer classifiers with a meta learner for final prediction.
 
@@ -39,6 +39,19 @@ pip install -e .
 Training and test files should be CSV files with sample IDs in the first column.
 Each row is one peptide sequence/sample, each feature is one column, and the
 binary class label must be stored in a column named `labels`.
+### Feature extraction
+'''bash
+use extractFeatures funtion in extractFeatures.R file to prepare feature matrix:
+extractFeatures(ampFile ='training_data_AMP.fasta',
+              nonampFile = 'training_data_nonAMP.fasta',
+              out = './training_data_features.csv',
+              split1_prop = 0.2,split2_prop = 0.6)
+
+extractFeatures(ampFile ='test_data_AMP.fasta',
+              nonampFile = 'test_data_nonAMP.fasta',
+              out = './test_data_features.csv',
+              split1_prop = 0.2,split2_prop = 0.6)
+'''
 
 Example:
 
