@@ -53,20 +53,12 @@ extractFeatures(ampFile ='test_data_AMP.fasta',
               split1_prop = 0.2,split2_prop = 0.6)
 ```
 
-Example:
-
-```text
-sample_id,feature_1,feature_2,feature_3,labels
-sample_001,0.13,0.44,0.09,1
-sample_002,0.05,0.21,0.31,0
-```
-
 ## Usage
 
 ```bash
 python scripts/train.py \
-  --train examples/example_train.csv \
-  --test examples/example_test.csv \
+  --train examples/training_data_features \
+  --test examples/test_data_features.csv \
   --output results/test_predictions.csv \
   --metrics-output results/metrics.csv \
 
