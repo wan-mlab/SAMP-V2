@@ -40,7 +40,7 @@ Training and test files should be CSV files with sample IDs in the first column.
 Each row is one peptide sequence/sample, each feature is one column, and the
 binary class label must be stored in a column named `labels`.
 ### Feature extraction
-'''bash
+```bash
 use extractFeatures funtion in extractFeatures.R file to prepare feature matrix:
 extractFeatures(ampFile ='training_data_AMP.fasta',
               nonampFile = 'training_data_nonAMP.fasta',
@@ -51,7 +51,7 @@ extractFeatures(ampFile ='test_data_AMP.fasta',
               nonampFile = 'test_data_nonAMP.fasta',
               out = './test_data_features.csv',
               split1_prop = 0.2,split2_prop = 0.6)
-'''
+```
 
 Example:
 
