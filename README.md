@@ -68,7 +68,7 @@ python scripts/train.py \
 ## Tutorial
 
 The original development notebook is currently stored as `sampv2.ipynb`.
-For release, convert it into a tutorial notebook under `examples/` that imports
+For release, convert it into a tutorial notebook under `sampv2/` that imports
 the package functions and uses relative example data paths.
 
 ## Citation
